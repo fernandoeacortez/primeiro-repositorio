@@ -1,0 +1,11 @@
+function calcularPrecoFinal(precoProduto, desconto) {
+  const precoFinal = precoProduto - (precoProduto * (desconto / 100));
+  
+  return precoFinal;
+}
+
+const precoProduto = 200.00;
+const desconto = 15;
+
+const precoFinal = calcularPrecoFinal(precoProduto, desconto);
+console.log(`O preço final do produto após o desconto é R$ ${precoFinal.toFixed(2)}`);
